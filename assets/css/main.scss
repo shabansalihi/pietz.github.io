@@ -128,7 +128,9 @@ blockquote {
 	}
 	&__content {
 		padding-top: 20px;
-
+		p {
+			text-align: justify;
+		}
 		a {
 			padding-bottom: 1px;
 			border-bottom: 1px solid $color-link;
