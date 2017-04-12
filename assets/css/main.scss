@@ -12,10 +12,17 @@ body {
 	font-weight: 400;
 }
 h1 {
+	font-size: $size-h1;
 	margin-bottom: 5px;
 }
+h2 {
+	font-size: $size-h2;
+}
+h3 {
+	font-size: $size-h3;
+}
 p {
-	font-size: 1em;
+	font-size: $size-p;
 	line-height: 150%;
 }
 a {
@@ -54,7 +61,7 @@ blockquote {
 }
 
 .wrapper {
-	max-width: 800px;
+	max-width: 600px;
 	margin: auto;
 	padding: 60px 30px 60px 30px;
 	@media screen and (max-width: $br) {
@@ -73,12 +80,13 @@ blockquote {
 	}
 	h1 {
 		color: $color-title;
-		font-size: 2em;
+		font-size: $size-title;
 		margin-bottom: 0;
 	}
 	ul {
 		margin-top: 10px;
 		li {
+			font-size: $size-nav;
 			display: inline;
 			padding: 0;
 			padding-left: 5px;
@@ -88,29 +96,13 @@ blockquote {
 
 .blog {
 	padding-bottom: 30px;
-	h1 {
-		font-size: 1.4em;
-		margin-bottom: 5px;
-	}
-}
-
-.music {
-	padding-bottom: 30px;
-	h1 {
-		font-size: 1.4em;
-		margin-bottom: 5px;
-	}
-	a {
-		padding: 5px;
-		padding-left: 10px;
-	}
 }
 
 .post {
 	padding-bottom: 30px;
 	&__back {
 		a {
-
+			font-size: $size-back;
 		}
 	}
 	&__title {
@@ -119,17 +111,14 @@ blockquote {
 		margin-bottom: 6px;
 		h1 {
 			display: inline-block;
-			font-size: 1.6em;
-			font-weight: 700;
 			padding-right: 10px;
 			padding-bottom: 2px;
 			text-decoration: none;
-			border-bottom: 3px solid $color-font;
+			border-bottom: 2px solid $color-font;
 		}
 	}
 	&__date {
 		p {
-			font-size: 1em;
 			font-style: italic;
 		}
 	}
@@ -141,19 +130,14 @@ blockquote {
 	&__content {
 		padding-top: 40px;
 		h1 {
-			font-size: 1.4em;
-			font-weight: 700;
 			margin-top: 50px;
 			margin-bottom: 10px;
 		}
 		h2 {
-			font-size: 1.1em;
-			font-weight: 700;
 			margin-top: 25px;
 			margin-bottom: 5px;
 		}
 		p {
-			font-size: 1em;
 			line-height: 150%;
 			margin-bottom: 15px;
 		}
@@ -224,21 +208,21 @@ blockquote {
 
 .about {
 	&__title {
-		font-size: 1.6em;
-		font-weight: 700;
 		margin-top: 20px;
 		margin-bottom: 10px;
+	}
+	&__back {
+		a {
+			font-size: $size-back;
+		}
 	}
 	&__content {
 		margin-top: 20px;
 		h1 {
-			font-size: 1.2em;
-			font-style: italic;
 			margin-top: 30px;
 			margin-bottom: 5px;
 		}
 		p {
-			font-size: 1em;
 			line-height: 150%;
 			margin-bottom: 10px;
 		}
